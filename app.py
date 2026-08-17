@@ -7,7 +7,11 @@ st.set_page_config(page_title="Diabetes Risk Predictor", layout="centered")
 
 @st.cache_resource
 def load_artifact():
-    return joblib.load("diabetes_model.joblib")
+    try:
+        return joblib.load("diabetes_model.joblib")
+    except Exception as e:
+        st.error(f"Model loading error: {type(e).__name__}: {e}")
+        st.stop()
 
 artifact = load_artifact()
 model = artifact["model"]
