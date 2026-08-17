@@ -4,7 +4,7 @@ A full machine learning pipeline that predicts diabetes risk from diagnostic mea
 11 classification algorithms, tunes the top performers, handles class imbalance, and ships as a
 live web app.
 
-**Live demo:** _add your Streamlit Community Cloud URL here once deployed_
+**Live demo:** (https://diabetes-risk-prediction-ep.streamlit.app/)
 
 ## What this project covers
 
